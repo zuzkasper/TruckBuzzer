@@ -20,7 +20,7 @@ void loop()
       lcd.clear();
       lcd.print("ERROR");
       lcd.setCursor(3,1);
-      lcd.print("Switch is on");
+      lcd.print("SWITCH ON");
       
       while(digitalRead(ignition_pin)==LOW){
         digitalWrite(buzzer,HIGH);
@@ -30,7 +30,10 @@ void loop()
       }
       if(digitalRead(ignition_pin)==HIGH){
         lcd.clear();
-        lcd.print("No error");
+        lcd.setCursor(2,0);
+        lcd.print("ALL SYSTEMS");
+        lcd.setCursor(2,1);
+        lcd.print("NORMAL");
       }
   }
 } 
