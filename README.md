@@ -7,3 +7,5 @@ If the ignition is on, the voltage will be set to high and the buzzer will not b
 If the ignition is not on, the voltage will be low alerting the buzzer that the truck was turned off without the lights being turned off.
 If the lights are turned off, there will be no power coming to the arduino as both are controlled by the blackout switch.
 This way the arduino is only on when the light is on.
+
+The client wanted a message on a simple display to alert him of the issue.
